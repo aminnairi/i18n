@@ -32,8 +32,8 @@ describe("i18n", (): void => {
             locale: "fr-FR",
             translations: {
                 "Hello, {}! You have {} unread messages.": {
-                    "fr-FR": "Bonjour, {} ! Vous avez {} messages non-lus.",
-                    "es-ES": "Holà, {}! Tiene {} mensajes sin leer."
+                    "es-ES": "Holà, {}! Tiene {} mensajes sin leer.",
+                    "fr-FR": "Bonjour, {} ! Vous avez {} messages non-lus."
                 }
             }
         });
@@ -53,8 +53,8 @@ describe("i18n", (): void => {
             locale: "fr-CA",
             translations: {
                 "Hello, {}! You have {} unread messages.": {
-                    "fr-FR": "Bonjour, {} ! Vous avez {} messages non-lus.",
-                    "es-ES": "Holà, {}! Tiene {} mensajes sin leer."
+                    "es-ES": "Holà, {}! Tiene {} mensajes sin leer.",
+                    "fr-FR": "Bonjour, {} ! Vous avez {} messages non-lus."
                 }
             }
         });
