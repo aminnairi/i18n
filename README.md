@@ -1,6 +1,6 @@
 # i18n
 
-![Code Style](https://github.com/aminnairi/i18n/workflows/Code%20Style/badge.svg?branch=next) ![Tests](https://github.com/aminnairi/i18n/workflows/Tests/badge.svg?branch=next) ![Build](https://github.com/aminnairi/i18n/workflows/Build/badge.svg?branch=next)
+![Code Style](https://github.com/aminnairi/i18n/workflows/Code%20Style/badge.svg?branch=latest) ![Tests](https://github.com/aminnairi/i18n/workflows/Tests/badge.svg?branch=latest) ![Build](https://github.com/aminnairi/i18n/workflows/Build/badge.svg?branch=latest)
 
 Translation library written in [TypeScript](https://www.typescriptlang.org/) using [tagged template functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#Tagged_templates).
 
