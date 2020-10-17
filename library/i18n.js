@@ -1,3 +1,7 @@
+'use strict';
+
+Object.defineProperty(exports, '__esModule', { value: true });
+
 const join = (first, second) => {
     const firstLength = first.length;
     let firstIndex = 0;
@@ -23,5 +27,5 @@ const createI18n = ({ locale, translations }) => (strings, ...values) => {
     return join(strings, values);
 };
 
-export { createI18n };
+exports.createI18n = createI18n;
 //# sourceMappingURL=i18n.js.map
