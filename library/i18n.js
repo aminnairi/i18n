@@ -1,5 +1,3 @@
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.createI18n = void 0;
 const join = (first, second) => {
     const firstLength = first.length;
     let firstIndex = 0;
@@ -13,7 +11,7 @@ const join = (first, second) => {
     }
     return output;
 };
-exports.createI18n = ({ locale, translations }) => (strings, ...values) => {
+const createI18n = ({ locale, translations }) => (strings, ...values) => {
     const maybeLocaleTranslations = translations[strings.join("{}")];
     if ("undefined" !== typeof maybeLocaleTranslations) {
         const maybeLocaleTranslation = maybeLocaleTranslations[locale];
@@ -24,4 +22,6 @@ exports.createI18n = ({ locale, translations }) => (strings, ...values) => {
     }
     return join(strings, values);
 };
+
+export { createI18n };
 //# sourceMappingURL=i18n.js.map
