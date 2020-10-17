@@ -24,6 +24,12 @@ export default {
             file: resolve("library", "i18n.module.js"),
             format: "esm",
             sourcemap: true
+        },
+        {
+            file: resolve("library", "i18n.browser.js"),
+            format: "iife",
+            sourcemap: true,
+            name: "I18n"
         }
     ],
 
