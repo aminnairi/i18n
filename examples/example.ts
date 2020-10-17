@@ -18,3 +18,4 @@ const unreadMessages: number = 42;
 
 console.log(i18n`Hello, world!`);
 console.log(i18n`Hi ${name}, You have ${String(unreadMessages)} unread messages.`);
+console.log(i18n`Good morning ${name}, what's on your mind today?`);
