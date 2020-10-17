@@ -20,11 +20,30 @@
  * OTHER DEALINGS IN THE SOFTWARE.
  */
 
-import {createI18n} from "../src/i18n";
+import {createI18n} from "../sources/i18n";
 
 const MAXIMUM_ASSERTIONS: number = 1;
 
 describe("i18n", (): void => {
+    it("should return the correct translation without interpollations", (): void => {
+        expect.assertions(MAXIMUM_ASSERTIONS);
+
+        const i18n = createI18n({
+            locale: "fr-FR",
+            translations: {
+                "Hello world!": {
+                    "es-ES": "¡Holà el mundo!",
+                    "fr-FR": "Bonjour le monde !"
+                }
+            }
+        });
+
+        const translation: string = i18n`Hello world!`;
+        const expectation = "Bonjour le monde !";
+
+        expect(translation).toStrictEqual(expectation);
+    });
+
     it("should return the correct translation", (): void => {
         expect.assertions(MAXIMUM_ASSERTIONS);
 
