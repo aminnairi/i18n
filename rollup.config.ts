@@ -15,7 +15,7 @@ export default {
 
     output: {
         dir: resolve("library"),
-        format: "esm",
+        format: "cjs",
         sourcemap: true
     },
 
