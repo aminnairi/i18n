@@ -1,7 +1,7 @@
 {
     "description": "Translation library written in TypeScript using tag-functions.",
     "license": "MIT",
-    "main": "./lib/i18n.js",
+    "lib": "./lib/i18n.js",
     "types": "./lib/i18n.d.ts",
     "name": "@aminnairi/i18n",
     "private": false,
