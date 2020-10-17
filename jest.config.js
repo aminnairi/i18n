@@ -1,15 +1,15 @@
 // For a detailed explanation regarding each configuration property, visit:
 // https://jestjs.io/docs/en/configuration.html
 
-export default {
+module.export = {
     // All imported modules in your tests should be mocked automatically
     // automock: false,
 
     // Stop running tests after `n` failures
-    // bail: 0,
+    bail: 1,
 
     // The directory where Jest should store its cached dependency information
-    // cacheDirectory: "/tmp/jest_rs",
+    cacheDirectory: "jest/cache",
 
     // Automatically clear mock calls and instances between every test
     clearMocks: true,
@@ -19,7 +19,9 @@ export default {
     collectCoverage: true,
 
     // An array of glob patterns indicating a set of files for which coverage information should be collected
-    // collectCoverageFrom: undefined,
+    collectCoverageFrom: [
+        "<rootDir>/sources/**/*.ts"
+    ],
 
     // The directory where Jest should output its coverage files
     coverageDirectory: "jest/coverage",
@@ -97,7 +99,6 @@ export default {
 
     // A preset that is used as a base for Jest's configuration
     // preset: undefined,
-    preset: "ts-jest",
 
     // Run tests from one or more projects
     // projects: undefined,
@@ -141,7 +142,7 @@ export default {
     // snapshotSerializers: [],
 
     // The test environment that will be used for testing
-    testEnvironment: "node"
+    testEnvironment: "node",
 
     // Options that will be passed to the testEnvironment
     // testEnvironmentOptions: {},
@@ -176,7 +177,9 @@ export default {
     // timers: "real",
 
     // A map from regular expressions to paths to transformers
-    // transform: undefined,
+    transform: {
+        "/^.+\\.tsx?$/": "babel-jest"
+    }
 
     // An array of regexp pattern strings that are matched against all source file paths, matched files will skip transformation
     // transformIgnorePatterns: [
