@@ -2,7 +2,7 @@
 
 ![Code Style](https://github.com/aminnairi/i18n/workflows/Code%20Style/badge.svg?branch=next) ![Tests](https://github.com/aminnairi/i18n/workflows/Tests/badge.svg?branch=next) ![Build](https://github.com/aminnairi/i18n/workflows/Build/badge.svg?branch=next)
 
-Translation library written in TypeScript using tagged template functions.
+Translation library written in [TypeScript](https://www.typescriptlang.org/) using [tagged template functions](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Template_literals#Tagged_templates).
 
 ```javascript
 i18n`Hello, world!`;
