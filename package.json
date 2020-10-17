@@ -1,11 +1,14 @@
 {
     "description": "Translation library written in TypeScript using tag-functions.",
     "license": "MIT",
-    "lib": "./lib/i18n.js",
-    "types": "./lib/i18n.d.ts",
+    "lib": "lib/i18n.js",
+    "types": "lib/i18n.d.ts",
     "name": "@aminnairi/i18n",
     "private": false,
     "version": "0.1.0",
+    "files": [
+        "lib/*"
+    ],
     "scripts": {
         "lint": "find . -type f \\( -name '*js' -o -name '*ts' \\) ! -path '*lib*' ! -path '*node_modules*' ! -path '*jest*' ! -path 'lib' -exec eslint {} \\;",
         "build": "rm -rf lib/** && rollup --config ./rollup.config.ts",
