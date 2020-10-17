@@ -3,6 +3,7 @@
     "license": "MIT",
     "lib": "library/i18n.common.js",
     "module": "library/i18n.module.js",
+    "browser": "library/i18n.browser.js",
     "types": "library/i18n.d.ts",
     "name": "@aminnairi/i18n",
     "private": false,
