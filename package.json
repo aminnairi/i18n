@@ -1,7 +1,8 @@
 {
     "description": "Translation library written in TypeScript using tagged template functions.",
     "license": "MIT",
-    "lib": "library/i18n.js",
+    "lib": "library/i18n.common.js",
+    "module": "library/i18n.module.js",
     "types": "library/i18n.d.ts",
     "name": "@aminnairi/i18n",
     "private": false,
@@ -11,7 +12,7 @@
     ],
     "scripts": {
         "lint": "find . -type f \\( -name '*js' -o -name '*ts' \\) ! -path '*examples*' ! -path '*library*' ! -path '*node_modules*' ! -path '*jest*' -exec eslint {} \\;",
-        "build": "rm -rf library/** && rollup --config ./rollup.config.ts",
+        "build": "rm -rf library/** && rollup --config ./rollup.config.ts && tsc --emitDeclarationOnly --project tsconfig.declaration.json",
         "test": "jest"
     },
     "devDependencies": {

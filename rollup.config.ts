@@ -14,16 +14,23 @@ import typescript from "@rollup/plugin-typescript";
 export default {
     input: resolve("sources", "i18n.ts"),
 
-    output: {
-        dir: resolve("library"),
-        format: "cjs",
-        sourcemap: true
-    },
+    output: [
+        {
+            file: resolve("library", "i18n.common.js"),
+            format: "cjs",
+            sourcemap: true
+        },
+        {
+            file: resolve("library", "i18n.module.js"),
+            format: "esm",
+            sourcemap: true
+        }
+    ],
 
     plugins: [
+        typescript({tsconfig: resolve("tsconfig.json")}),
         commonjs(),
         nodeResolve(),
-        typescript({tsconfig: resolve("tsconfig.json")}),
         terser()
     ]
 };
