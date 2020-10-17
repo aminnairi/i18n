@@ -1,10 +1,10 @@
 {
     "description": "Translation library written in TypeScript using tag-functions.",
     "license": "MIT",
-    "main": "lib/i18n.js",
+    "main": "./lib/i18n.js",
+    "types": "./lib/i18n.d.ts",
     "name": "@aminnairi/i18n",
     "private": false,
-    "type": "module",
     "version": "0.1.0",
     "scripts": {
         "lint": "find . -type f \\( -name '*js' -o -name '*ts' \\) ! -path '*lib*' ! -path '*node_modules*' ! -path '*jest*' ! -path 'lib' -exec eslint {} \\;",
@@ -14,6 +14,9 @@
     "devDependencies": {
         "@aminnairi/eslint-config": "aminnairi/eslint-config",
         "@aminnairi/eslint-config-typescript": "aminnairi/eslint-config-typescript",
+        "@babel/core": "^7.12.3",
+        "@babel/preset-env": "^7.12.1",
+        "@babel/preset-typescript": "^7.12.1",
         "@rollup/plugin-commonjs": "^15.1.0",
         "@rollup/plugin-node-resolve": "^9.0.0",
         "@rollup/plugin-typescript": "^6.0.0",
@@ -23,9 +26,11 @@
         "eslint": "^7.10.0",
         "jest": "^26.5.2",
         "rollup": "^2.29.0",
-        "ts-jest": "^26.4.1",
+        "ts-node": "^9.0.0",
         "tslib": "^2.0.3",
         "typescript": "^4.0.3"
     },
-    "dependencies": {}
+    "dependencies": {
+        "babel-jest": "^26.5.2"
+    }
 }
