@@ -8,6 +8,7 @@
 import commonjs from "@rollup/plugin-commonjs";
 import nodeResolve from "@rollup/plugin-node-resolve";
 import {resolve} from "path";
+import {terser} from "rollup-plugin-terser";
 import typescript from "@rollup/plugin-typescript";
 
 export default {
@@ -22,6 +23,7 @@ export default {
     plugins: [
         commonjs(),
         nodeResolve(),
-        typescript({tsconfig: resolve("tsconfig.json")})
+        typescript({tsconfig: resolve("tsconfig.json")}),
+        terser()
     ]
 };
