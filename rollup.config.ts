@@ -11,7 +11,7 @@ import {resolve} from "path";
 import typescript from "@rollup/plugin-typescript";
 
 export default {
-    input: resolve("src", "i18n.ts"),
+    input: resolve("sources", "i18n.ts"),
 
     output: {
         dir: resolve("lib"),
