@@ -14,7 +14,7 @@ export default {
     input: resolve("sources", "i18n.ts"),
 
     output: {
-        dir: resolve("lib"),
+        dir: resolve("library"),
         format: "esm",
         sourcemap: true
     },
