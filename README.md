@@ -45,6 +45,8 @@ Integrating translation on an already ongoing project is really tedious. From my
 $ npm install --save aminnairi/i18n
 ```
 
+*Notes: this will transparently install the package directly from the GitHub repository.*
+
 ## Uninstallation
 
 ```console
