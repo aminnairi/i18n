@@ -1,5 +1,5 @@
 {
-    "description": "Translation library written in TypeScript using tag-functions.",
+    "description": "Translation library written in TypeScript using tagged template functions.",
     "license": "MIT",
     "lib": "library/i18n.js",
     "types": "library/i18n.d.ts",
